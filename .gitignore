@@ -1,0 +1,5 @@
+*.avi
+*.mp4
+*.afs
+__pycache__/
+.vscode/
