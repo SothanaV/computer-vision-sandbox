@@ -1,0 +1,1 @@
+ffmpeg -rtsp_transport tcp -i rtsp://admin:888888@192.168.1.19:10554/tcp/av0_0 -flags +global_header -f segment -segment_time 300 -segment_format_options movflags=+faststart -reset_timestamps 1 -f segment -segment_format mp4 "out%07d.mp4"
